@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narbar</title>
+    <style>* {
+        box-sizing: border-box;
+      }
+       
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      }
+    
+      .cimg{
+        height: 25px;
+        width: 25px;
+        display: block;
+        text-align: center;
+        float: right;
+        margin: 13px;
+        margin-right: 52px
+      }
+    
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: #7EC855;
+        font-family: 'Roboto', sans-serif;
+      }
+    
+      .shopping-cart {
+        width: 750px;
+        height: 525px;
+        margin: 80px auto;
+        background: #FFFFFF;
+        box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+        border-radius: 6px;
+       
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .title {
+        height: 60px;
+        border-bottom: 1px solid #E1E8EE;
+        padding: 20px 30px;
+        color: #5E6977;
+        font-size: 18px;
+        font-weight: 400;
+      }
+       
+      .item {
+        padding: 20px 30px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        /* display: block; */
+        /* width: 100px; */
+        /* height: 100px; */
+        /* padding: 5px; */
+        border: 1px solid blue;    
+        background-color: yellow;
+      }
+       
+      .item:nth-child(3) {
+        border-top:  1px solid #E1E8EE;
+        border-bottom:  1px solid #E1E8EE;
+      }
+    
+      .buttons {
+        position: relative;
+        padding-top: 30px;
+        margin-right: 60px;
+      }
+    
+      .add{
+        height: 22px;
+        width: 76px;
+        align-items: center;
+        display: inline-block
+      }
+      
+      .class{
+        display: inline-block;
+        padding: 10px;
+        margin: 16px
+      }
+    
+      .is-active {
+        animation-name: animate;
+        animation-duration: .8s;
+        animation-iteration-count: 1;
+        animation-timing-function: steps(28);
+        animation-fill-mode: forwards;
+      }
+       
+      @keyframes animate {
+        0%   { background-position: left;  }
+        50%  { background-position: right; }
+        100% { background-position: right; }
+      }
+    
+      .img {
+        height: 88px;
+        width: 126px;
+        margin-right: 24px;
+        margin-left: -52px
+      }
+       
+      .description {
+        padding-top: 10px;
+        margin-right: 60px;
+        width: 115px;
+      }
+       
+      .description span {
+        display: block;
+        font-size: 14px;
+        color: #43484D;
+        font-weight: 400;
+      }
+       
+      .description span:first-child {
+        margin-bottom: 5px;
+      }
+      .description span:last-child {
+        font-weight: 300;
+        margin-top: 8px;
+        color: #86939E;
+      }
+    
+      
+       
+      button[class*=btn] {
+        width: 30px;
+        height: 30px;
+        background-color: #E1E8EE;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+      
+       
+      button:focus,
+      input:focus {
+        outline:0;
+      }
+      .total-price {
+        width: 83px;
+        padding-top: 27px;
+        text-align: center;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+      }</style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+        <a href="/cart"><img src="c.jpg" class="cimg" /></a>
+        </ul>
+        
+
+    </div>
+
+
+      <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+            Shopping Bag
+        </div>
+
+        <!-- 1 -->
+        <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+                <img src="1.jpg" class="img" />
+            </div>
+
+            <div class="description">
+                <span>T-Shirt</span>
+                <span>Cotton </span>
+                <span>Black</span>
+            </div>
+
+            <div class="class">
+                <button class="add" type="button" name="Add">Add</button>
+            </div>
+            <div class="total-price">$59</div>
+        </div>
+
+        <!-- 2 -->
+        <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+                <img src="2.jpg" class="img" />
+            </div>
+
+            <div class="description">
+                <span>Shirt</span>
+                <span>Cotton</span>
+                <span>Blue & Grey</span>
+            </div>
+
+            <div class="class">
+                <button class="add" type="button" name="Add">Add</button>
+            </div>
+            <div class="total-price">$149</div>
+            </div>
+
+        <!-- 3 -->
+        <div class="item">
+            <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+                <img src="3.jpg" class="img" />
+            </div>
+
+            <div class="description">
+                <span>Pent</span>
+                <span>Jeans</span>
+                <span>Light Blue</span>
+            </div>
+
+            <div class="class">
+                <button class="add" type="button" name="Add">Add</button>
+            </div>
+            <div class="total-price">$99</div>
+            </div>
+            
+            <!-- 4 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                    <span class="like-btn"></span>
+                </div>
+    
+                <div class="image">
+                    <img src="4.jpg" class="img" />
+                </div>
+    
+                <div class="description">
+                    <span>Pent</span>
+                    <span>Cottan High</span>
+                    <span>White</span>
+                </div>
+    
+                <div class="class">
+                    <button class="add" type="button" name="Add">Add</button>
+                </div>
+                <div class="total-price">$129</div>
+    
+
+    
+    </div>
+
+</body>
+
+</html>

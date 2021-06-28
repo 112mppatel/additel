@@ -1,0 +1,33 @@
+[{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd736ee"
+    },
+    "name": "T-Shirt",
+    "Fabric": "Cotton",
+    "Color":"Black",
+    "price": "$59"
+  },{
+    "_id": {
+      "$oid": "5eee6671a27a66807cf2bea3"
+    },
+    "name": "Shirt",
+    "Fabric": "Cotton",
+    "Color":"Blue & Grey",
+    "price": "$149"
+  },{
+    "_id": {
+      "$oid": "5eee6692a27a66807cf2bea4"
+    },
+    "name": "Pent",
+    "Fabric": "Jeans",
+    "Color":"Light Blue",
+    "price": "$99"
+  },{
+    "_id": {
+      "$oid": "5eee66a5a27a66807cf2bea5"
+    },
+    "name": "Pent",
+    "Fabric": "Cotton High",
+    "Color":"White",
+    "price": "$129"
+  }]
